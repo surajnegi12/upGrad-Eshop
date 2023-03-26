@@ -7,8 +7,6 @@ import PhoneValidator from "../utils/phoneValidator";
 import CreateUser from "../utils/signup";
 import { useHistory } from "react-router-dom";
 import AuthenticateUser from "../utils/login";
-import Cookies from "js-cookies";
-
 function Auth({ type }) {
   const [validEmail, setValidEmail] = useState(true);
   const [validPhone, setValidPhone] = useState(true);
