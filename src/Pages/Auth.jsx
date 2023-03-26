@@ -1,4 +1,4 @@
-import { Button, Snackbar, TextField } from "@mui/material";
+import { Button, Snackbar, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import LockIcon from "@mui/icons-material/Lock";
@@ -131,9 +131,11 @@ function Auth({ type }) {
                     handleLogin();
                   }}
                 >
-                  Log In
+                Log In
                 </Button>
               </div>
+              <Typography><a href="/auth/Signup">Don't have an account? Sign Up</a></Typography>
+              <Typography m='auto' mt="100px">copyright @ UpGrad 2021</Typography>
             </form>
           ) : (
             <form className="flex flex-col items-start gap-3 w-[375px]">

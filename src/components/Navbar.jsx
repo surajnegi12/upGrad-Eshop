@@ -110,7 +110,7 @@ function Navbar({ user, setFilteredProducts }) {
             </Search>}
 
             {!auth && (
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3" style={{textDecoration:"underline"}}>
                 <a href="/auth/login">Login</a>
                 <a href="/auth/signup">Sign Up</a>
               </div>
@@ -118,10 +118,10 @@ function Navbar({ user, setFilteredProducts }) {
 
             {admin && (
               <div className="flex items-center gap-3">
-                 <a href="/" className="hidden md:block">
+                 <a href="/" className="hidden md:block" style={{textDecoration:"underline"}}>
                   Home
                 </a>
-                <a href="/product/new" className="hidden md:block">
+                <a href="/product/new" className="hidden md:block"  style={{textDecoration:"underline"}}>
                   Add Product
                 </a>
                 <a href="/logout" className="px-3 py-1 bg-red-500 rounded-md">
@@ -132,7 +132,7 @@ function Navbar({ user, setFilteredProducts }) {
 
             {!admin && auth && (
               <div className="flex items-center gap-3">
-                  <a href="/" className="hidden md:block">
+                  <a href="/" className="hidden md:block" style={{textDecoration:"underline"}}>
                   Home
                 </a>
                 <a href="/logout" className="px-3 py-1 bg-red-500 rounded-md">

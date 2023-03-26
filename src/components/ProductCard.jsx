@@ -4,12 +4,13 @@ import CardContent from "@mui/material/CardContent";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
-import { DeleteForever, Edit } from "@material-ui/icons";
+import { Edit } from "@material-ui/icons";
 import useAdmin from "../hooks/useAdmin";
 import PopUp from "./PopUp";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function ProductCard({ product, setAdminError }) {
   const admin = useAdmin();
@@ -76,7 +77,7 @@ export default function ProductCard({ product, setAdminError }) {
                 aria-label="Remove Product"
                 onClick={() => setOpen(true)}
               >
-                <DeleteForever />
+                 <DeleteIcon/>
               </IconButton>
             </div>
           )}
