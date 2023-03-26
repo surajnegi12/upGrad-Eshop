@@ -49,13 +49,7 @@ export default function ProductCard({ product, setAdminError }) {
             onClick={() => {
               if (!auth) {
                 history.push("/auth/login/");
-              } else if (admin) {
-                setAdminError(true);
-                setTimeout(() => {
-                  setAdminError(false);
-                }, 2000);
-                return;
-              } else {
+              }else {
                 history.push("/product/" + product.id);
               }
             }}
